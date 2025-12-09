@@ -7,10 +7,10 @@
 </template>
 
 <script setup lang="ts">
-import { FormKit, FormKitSchema } from '@formkit/vue'
-import type { FormSchema } from '~/types/schema'
+import { FormKit, FormKitSchema } from "@formkit/vue";
+import type { FormSchema } from "~/types/schema";
 
 defineProps<{
-  schema: FormSchema
-}>()
+	schema: FormSchema;
+}>();
 </script>
