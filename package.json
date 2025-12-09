@@ -12,6 +12,7 @@
 		"lint:fix": "biome lint --write .",
 		"format": "biome format --write .",
 		"check": "biome check --write .",
+		"typecheck": "nuxt typecheck",
 		"prepare": "husky"
 	},
 	"dependencies": {
@@ -27,7 +28,9 @@
 		"@types/node": "24.10.2",
 		"husky": "9.1.7",
 		"lint-staged": "16.2.7",
-		"nuxt": "4.2.2"
+		"nuxt": "4.2.2",
+		"typescript": "5.9.3",
+		"vue-tsc": "3.1.8"
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,json,jsonc,vue}": [
