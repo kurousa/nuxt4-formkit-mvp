@@ -4,7 +4,7 @@
       <h1 class="text-3xl font-extrabold text-gray-800 mb-2">Dynamic Form Demo</h1>
       <p class="text-gray-500 mb-8">Generated from JSON Schema using FormKit</p>
 
-      <DynamicFormRenderer :schema="mockSchema" />
+      <DynamicFormRenderer :schema="mockSchema" @submit="handleSubmit" />
 
       <!-- Display Form State (Optional for demo) -->
        <div class="mt-8 pt-6 border-t border-gray-100">
@@ -76,4 +76,8 @@ const mockSchema: FormSchema = [
 		],
 	},
 ];
+
+const handleSubmit = (data: any) => {
+	alert(JSON.stringify(data, null, 2));
+};
 </script>
